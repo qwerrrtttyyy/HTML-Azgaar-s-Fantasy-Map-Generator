@@ -1,21 +1,23 @@
 ```
-# Build artifacts
-dist/
-build/
-*.min.js
-*.min.css
-*.js
-*.css
-
 # Dependencies
 node_modules/
 
-# Editor/IDE files
-.vscode/
-.idea/
-*.swp
-*.swo
-*.tmp
+# Build artifacts
+dist/
+build/
+target/
+
+# Python specific
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.py.class
+venv/
+.venv/
+.env
+.env.local
+.env.*
 
 # Logs
 *.log
@@ -25,16 +27,18 @@ coverage/
 htmlcov/
 .coverage
 
-# Environment variables
-.env
-.env.local
-*.env.*
+# IDE specific
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
 
-# OS generated files
+# OS specific
 .DS_Store
 Thumbs.db
 
-# Compressed files
+# Compression files
 *.zip
 *.gz
 *.tar
@@ -58,62 +62,6 @@ Thumbs.db
 *.tar.xz
 *.tar.zst
 
-# Python specific
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.pytest_cache/
-.mypy_cache/
-.venv/
-venv/
-pip-log.txt
-pip-selfcheck.json
-
-# Java specific
-*.class
-*.jar
-*.war
-*.ear
-target/
-.gradle/
-
-# Node.js specific
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# C/C++ specific
-*.o
-*.a
-*.so
-*.dll
-*.exe
-*.out
-
-# Go specific
-*.out
-*.exe
-
-# Rust specific
-*.so
-*.dylib
-*.dll
-
-# Ruby specific
-*.gem
-.bundle/
-
-# Web specific
-.sass-cache/
-*.css.map
-*.js.map
-
-# Backup files
-*~
-\#*\#
-*.bak
-*.swp
-*.swo
-
+# TypeScript/JavaScript build output
+*.tsbuildinfo
 ```
